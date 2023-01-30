@@ -7,7 +7,6 @@ import csv
 import javalang
 import logging
 
-# count loc
 
 log_levels = ["info", "error", "log", "severe", "debug", "warn", "trace", "quiet", "critical", "warning", "fine"]
 
@@ -77,6 +76,7 @@ def write_to_file_python(log_array):
             else:  # empty log statement
                 data = [element[1], str(element[3]), element[2], str(element[4]), "", element[0]]
             writer.writerow(data)
+        print("Saved Python logging points to python_event_log.csv")  
 
 def write_to_file_java(log_array):
     with open("java_event_log.csv", "a") as java_event_log:
@@ -94,6 +94,7 @@ def write_to_file_java(log_array):
                 data[4] = log_text
             data[5] = element[0]
             writer.writerow(data)
+        print("Saved Java logging points to java_event_log.csv")            
 
 # ast library seemingly has trouble detecting nested if-statements so I'm checking other blocks manually for them
 def traverse_if(if_node):
