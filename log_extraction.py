@@ -410,6 +410,7 @@ for program in programs:
     try:
         tree = javalang.parse.parse(program[1])
         file_name = program[0]
+        print(file_name)
         for path, node in tree.filter(javalang.tree.MethodDeclaration):
             if(hasattr(node, "body") and not isinstance(node.body, type(None))):
                 for subnode in node.body:
