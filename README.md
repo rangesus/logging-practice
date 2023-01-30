@@ -1,5 +1,5 @@
-# logging-practice
-A Study into the Practice of Logging in the Software Development Process
+# A Study into the Practice of Logging in the Software Development Process
+
 
 As attempting to execute the extraction and analysis code in one go was causing python to crash I had to split the individual steps up.
 
@@ -14,3 +14,6 @@ The analyzed projects projects are linked here:
 Java
 https://github.com/muralithailan/ChatBox/tree/66325adc24635d0c3544ce558694ba136638ba92
 https://github.com/amyfan/Coacheller
+https://github.com/dbeaver/dbeaver
+https://github.com/elastic/elasticsearch
+https://github.com/NationalSecurityAgency/ghidra
