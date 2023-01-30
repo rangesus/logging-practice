@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+
+a:hover {
+ cursor:pointer;
+}
+
+.body {
+	font-family: "Arial";
+}
+
+.header {
+	font-weight: bold;
+	font-size: 24px;
+	color: black;
+	margin-bottom: 6px;
+}
+
+
+.headerNotBold {
+	font-size: 24px;
+	color: black;
+	margin-bottom: 6px;
+}
+
+
+.headerBoldItalic {
+	font-weight: bold;
+	font-size: 24px;
+	color: black;
+	margin-bottom: 6px;
+}
+
+.header_mobile {
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+	margin-bottom: 12px;
+}
+
+.subheader {
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	margin-bottom: 14px;
+}
+
+.beta {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+	color: black;
+	margin-bottom: 14px;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+	color: black;
+	margin-bottom: 14px;
+}
+
+.label {
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+.textLast {
+	font-size: 14px;
+	margin-bottom: 14px;
+}
+
+.text {
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+
+.textLarge {
+	font-size: 14px;
+	width: 300px;
+	margin-bottom: 6px;
+}
+
+.button {
+	font-size: 14px;
+	margin-top: 10px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+.info {
+	font-style: italic;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.important {
+	font-weight: bold;
+}

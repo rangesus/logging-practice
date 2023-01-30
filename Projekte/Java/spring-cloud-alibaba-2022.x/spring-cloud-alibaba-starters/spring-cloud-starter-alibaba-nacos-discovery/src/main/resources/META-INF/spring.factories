@@ -1,0 +1,4 @@
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+  com.alibaba.cloud.nacos.discovery.configclient.NacosDiscoveryClientConfigServiceBootstrapConfiguration
+org.springframework.context.ApplicationListener=\
+  com.alibaba.cloud.nacos.discovery.logging.NacosLoggingListener

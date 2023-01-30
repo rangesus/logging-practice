@@ -1,0 +1,6 @@
+matplotlib~=3.3.2
+pyserial~=3.4
+setuptools~=50.3.0
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib

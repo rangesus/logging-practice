@@ -1,0 +1,19 @@
+# Maven related
+target/
+
+# Javadoc dir
+javadocs/
+
+# IntelliJ Idea related
+.idea/
+*.iml
+
+# Eclipse related
+.settings/
+.classpath
+.project
+
+# Miscellenous
+bot.properties
+statistics.properties
+*.log

@@ -1,0 +1,37 @@
+package com.ratethisfest.client;
+
+import java.util.List;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.ratethisfest.shared.RatingGwt;
+import com.ratethisfest.shared.Set;
+
+/**
+ * The async counterpart of <code>CoachellerService</code>.
+ */
+@Deprecated
+public interface CoachellerServiceAsync {
+  void greetServer(String input, AsyncCallback<String> callback) throws IllegalArgumentException;
+
+  void updateSetData(AsyncCallback<String> callback) throws IllegalArgumentException;
+
+  void recalculateSetRatingAverages(AsyncCallback<String> callback) throws IllegalArgumentException;
+
+  void getSets(String yearString, String day, AsyncCallback<List<Set>> callback)
+      throws IllegalArgumentException;
+
+  void addRating(String email, Long setId, String weekend, String score, String notes,
+      AsyncCallback<String> callback) throws IllegalArgumentException;
+
+  void getRatingsByUserEmail(String email, Integer year, AsyncCallback<List<RatingGwt>> callback)
+      throws IllegalArgumentException;
+
+  void deleteRatingsByUser(String email, AsyncCallback<String> callback)
+      throws IllegalArgumentException;
+
+  void deleteRating(Long ratingId, AsyncCallback<String> callback) throws IllegalArgumentException;
+
+  void emailRatingsToUser(String email, AsyncCallback<String> callback)
+      throws IllegalArgumentException;
+
+}
