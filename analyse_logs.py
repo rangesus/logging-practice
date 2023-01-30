@@ -45,7 +45,7 @@ merged_python_df['percentage'] = (merged_python_df['Start Timestamp'] * 100) / m
 merged_python_df.to_csv("merged_python_df.csv", sep='|')
 
 merged_java_df['percentage'] = (merged_java_df['Start Timestamp'] * 100) / merged_java_df['LOC']
-merged_java_df.to_csv("merged_java_df.csv", sep='|')
+#merged_java_df.to_csv("merged_java_df.csv", sep='|')
 
 # calculate mean position percentage per file
 merged_python_df = merged_python_df.groupby(["Case ID", "Project"])['percentage'].mean().reset_index(name='mean_percentage')
@@ -53,7 +53,7 @@ merged_java_df = merged_java_df.groupby(["Case ID", "Project"])['percentage'].me
 
 #in case of multiple files with same name within a project the percentage could exceed 100% - should be fixed now
 merged_python_df = merged_python_df[merged_python_df['mean_percentage'] <= 100]
-merged_python_df.to_csv("mean_merged_python_df.csv", sep='|')
+#merged_python_df.to_csv("mean_merged_python_df.csv", sep='|')
 
 merged_java_df = merged_java_df[merged_java_df['mean_percentage'] <= 100]
 merged_java_df.to_csv("mean_merged_java_df.csv", sep='|')
@@ -123,6 +123,8 @@ for index, row in python_df.iterrows():
                 python_df.loc[index, 'Parsed Activity'] = activity
             prev = word
             
+# mostly for testing, since activity extraction takes a long time saving them in a csv and skipping the extraction in
+# subsequent executions can be helpful            
 with open('python_regular_activities.csv', 'w') as f:
     writer = csv.writer(f, delimiter=',')
     writer.writerows(python_activities)   
